@@ -14,7 +14,7 @@ coordinates        smd_ini.pdb
 outputName         da_smd
 
 set temperature    300
-
+set Nsteps         10000
 #############################################################
 ## SIMULATION PARAMETERS                                   ##
 #############################################################

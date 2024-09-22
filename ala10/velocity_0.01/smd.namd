@@ -1,0 +1,62 @@
+#############################################################
+## JOB DESCRIPTION                                         ##
+#############################################################
+
+# SMD simulation (stretching) of deca-alanine in vacuum
+# Constant temperature
+
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+
+structure          da.psf
+coordinates        smd_ini.pdb
+outputName         da_smd
+
+set temperature    300.0 ;# 300K
+#set Nsteps         1000000 ; # 10000
+#############################################################
+## SIMULATION PARAMETERS                                   ##
+#############################################################
+
+# Input
+paraTypeCharmm	    on
+parameters          par_all27_prot_lipid.prm
+temperature         $temperature
+ 
+# Force-Field Parameters
+exclude             scaled1-4
+1-4scaling          1.0
+cutoff              12.
+switching           on
+switchdist          10.
+pairlistdist        13.5
+
+# Integrator Parameters
+timestep            2.0  ;# 2fs/step
+rigidBonds          all  ;# needed for 2fs steps
+nonbondedFreq	    1
+fullElectFrequency  2  
+stepspercycle       10
+
+# Constant Temperature Control
+langevin            on    ;# do langevin dynamics
+langevinDamping     5     ;# damping coefficient (gamma) of 5/ps
+langevinTemp        $temperature
+langevinHydrogen    no    ;# don't couple langevin bath to hydrogens
+
+# Output
+binaryoutput        no
+dcdfreq             500     ;# 500steps = every 1ps
+outputEnergies      100
+
+#############################################################
+## EXTRA PARAMETERS                                        ##
+#############################################################
+
+# Tcl interface
+tclForces           on
+tclForcesScript     smd.tcl
+
+
+run 1000000 ;
