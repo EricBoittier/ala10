@@ -1,0 +1,506 @@
+Charm++> No provisioning arguments specified. Running with a single PE.
+         Use +auto-provision to fully subscribe resources or +p1 to silence this message.
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 1 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: 
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 4 cores x 2 PUs = 8-way SMP)
+Charm++> cpu topology info is gathered in 0.002 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Info: NAMD 3.0 for Linux-x86_64-multicore
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 80000 for multicore-linux-x86_64-gcc
+Info: Built Sun Jun 16 07:49:30 CDT 2024 by dhardy on athine.ks.uiuc.edu
+Info: 1 NAMD  3.0  Linux-x86_64-multicore  1    pc-studix3  boittier
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.0587446 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 23.5898 MB of memory in use based on /proc/self/stat
+Info: Configuration file is smd.namd
+Info: Working in the current directory /pchem-data/meuwly/boittier/home/ala10/ala10
+TCL: Suspending until startup complete.
+Warning: Option "1-4scaling" has been deprecated. Instead use "oneFourScaling".
+Warning: The Langevin gamma parameters differ over the particles,
+Warning: requiring extra work per step to constrain rigid bonds.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        10
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             2000 steps
+Info: FIRST LDB TIMESTEP     50
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: EMPTY PATCH LOAD       40 ATOMS
+Info: INITIAL TEMPERATURE    300
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           da_smd.dcd
+Info: DCD FREQUENCY          500
+Info: DCD FIRST STEP         500
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        da_smd
+Info: NO RESTART FILE
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      13.5
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        16
+Info: ENERGY OUTPUT STEPS    100
+Info: ENERGY EVALUATION STEPS    100
+Info: OUTPUT ENERGY PRECISION 4
+Info: OUPUT ENERGY PRECISION 4
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    1000
+Info: TCL GLOBAL FORCES ACTIVE
+Info: TCL GLOBAL FORCES SCRIPT   smd.tcl
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   300
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 5 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1727089478
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         smd_ini.pdb
+Info: STRUCTURE FILE         da.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             par_all27_prot_lipid.prm
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: SUMMARY OF PARAMETERS:
+Info: 179 BONDS
+Info: 441 ANGLES
+Info: 534 DIHEDRAL
+Info: 49 IMPROPER
+Info: 0 CROSSTERM
+Info: 89 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.00790028
+Info: Reading pdb file smd_ini.pdb
+Info: TIME FOR READING PDB FILE: 0.00295725
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 104 ATOMS
+Info: 103 BONDS
+Info: 183 ANGLES
+Info: 251 DIHEDRALS
+Info: 22 IMPROPERS
+Info: 0 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 53 RIGID BONDS
+Info: 259 DEGREES OF FREEDOM
+Info: 51 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 51 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 727.821 amu
+Info: TOTAL CHARGE = 6.70552e-08 e
+Info: *****************************
+Info: 
+Info: Entering startup at 0.127873 s, 0.658371 MB of memory in use
+Info: Startup phase 0 took 7.4839e-05 s, 0.658371 MB of memory in use
+Info: ADDED 536 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.00116581 s, 0.658371 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE ENERGY: 1.69407e-21 AT 11.9974
+Info: RELATIVE IMPRECISION IN FAST TABLE ENERGY: 1.13046e-16 AT 11.9974
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000290274 AT 0.251946
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00292176 s, 0.658371 MB of memory in use
+Info: Startup phase 3 took 5.5471e-05 s, 0.658371 MB of memory in use
+Info: Startup phase 4 took 4.0763e-05 s, 0.658371 MB of memory in use
+Info: Startup phase 5 took 3.7955e-05 s, 0.658371 MB of memory in use
+Info: ORIGINAL ATOMS MINMAX IS -2.875 -4.273 -2.585  7.729 3.554 14.989
+Info: ADJUSTED ATOMS MINMAX IS -2.10787 -3.865 -1.42175  5.82087 2.425 13.9557
+Info: PATCH GRID IS 2 BY 1 BY 1
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY 0.201455 0.654967 -0.861973
+Info: LARGEST PATCH (0) HAS 54 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0019491 s, 0.658371 MB of memory in use
+Info: Startup phase 7 took 5.3961e-05 s, 0.658371 MB of memory in use
+Info: Startup phase 8 took 3.9243e-05 s, 0.658371 MB of memory in use
+Info: Startup phase 9 took 3.7388e-05 s, 0.658371 MB of memory in use
+Info: Startup phase 10 took 3.6738e-05 s, 0.658371 MB of memory in use
+Info: Startup phase 11 took 3.7481e-05 s, 0.658371 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 5.3976e-05 s, 0.658371 MB of memory in use
+Info: CREATING 19 COMPUTE OBJECTS
+Info: Startup phase 13 took 0.0259037 s, 0.658371 MB of memory in use
+Info: Startup phase 14 took 0.000106257 s, 0.658371 MB of memory in use
+Info: Startup phase 15 took 7.3728e-05 s, 0.658371 MB of memory in use
+Info: Finished startup at 0.160461 s, 0.658371 MB of memory in use
+
+TCL: Running for 10000 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:       0        16.7578        56.7178        25.5042         2.4962             67.0655       -14.8708         0.0000         0.0000        78.1256            231.7962       303.5876       153.6706       232.6383       303.5876
+
+LDB: ============= START OF LOAD BALANCING ============== 0.173663
+LDB: ============== END OF LOAD BALANCING =============== 0.173693
+LDB: =============== DONE WITH MIGRATION ================ 0.173715
+LDB: ============= START OF LOAD BALANCING ============== 0.18981
+LDB: ============== END OF LOAD BALANCING =============== 0.189828
+LDB: =============== DONE WITH MIGRATION ================ 0.189878
+Info: Initial time: 1 CPUs 0.000429541 s/step 0.00248577 days/ns 0.658371 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 0.194301
+LDB: ============== END OF LOAD BALANCING =============== 0.194315
+LDB: =============== DONE WITH MIGRATION ================ 0.194329
+LDB: ============= START OF LOAD BALANCING ============== 0.204143
+LDB: ============== END OF LOAD BALANCING =============== 0.204154
+LDB: =============== DONE WITH MIGRATION ================ 0.204176
+Info: Initial time: 1 CPUs 0.0002815 s/step 0.00162905 days/ns 0.658371 MB memory
+ENERGY:     100        26.2171        58.4720        27.0003         2.9313             60.6580       -15.4138         0.0000         0.0000        76.0272            235.8921       295.4335       159.8648       237.1982       284.3751
+
+LDB: ============= START OF LOAD BALANCING ============== 0.214772
+LDB: ============== END OF LOAD BALANCING =============== 0.214781
+LDB: =============== DONE WITH MIGRATION ================ 0.2148
+Info: Initial time: 1 CPUs 0.000217327 s/step 0.00125768 days/ns 0.658371 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 0.224357
+LDB: ============== END OF LOAD BALANCING =============== 0.22437
+LDB: =============== DONE WITH MIGRATION ================ 0.224396
+Info: Benchmark time: 1 CPUs 0.000185464 s/step 0.00107329 days/ns 0.658371 MB memory
+ENERGY:     200        24.2615        59.3478        28.2399         4.1985             67.2055       -23.0981         0.0000         0.0000        82.8860            243.0412       322.0861       160.1551       244.6851       279.2012
+
+Info: Benchmark time: 1 CPUs 0.000178419 s/step 0.00103252 days/ns 0.658371 MB memory
+Info: Benchmark time: 1 CPUs 0.000178451 s/step 0.0010327 days/ns 0.658371 MB memory
+ENERGY:     300        18.8223        65.4408        25.8723         4.3147             63.9163       -14.6687         0.0000         0.0000        76.5546            240.2523       297.4829       163.6977       241.3319       297.6230
+
+Info: Benchmark time: 1 CPUs 0.000181768 s/step 0.0010519 days/ns 0.658371 MB memory
+Info: Benchmark time: 1 CPUs 0.000182537 s/step 0.00105635 days/ns 0.658371 MB memory
+ENERGY:     400        24.0701        58.4427        29.9916         4.2865             66.3966       -19.7124         0.0000         0.0000        73.0233            236.4985       283.7608       163.4751       238.0540       295.7398
+
+Info: Benchmark time: 1 CPUs 0.000181999 s/step 0.00105323 days/ns 0.658371 MB memory
+ENERGY:     500        31.1287        59.3391        27.0644         2.4043             67.5940       -12.0630         0.0000         0.0000        81.0124            256.4800       314.8053       175.4676       257.0172       303.9940
+
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 500
+The last position output (seq=500) takes 0.002 seconds, 0.658 MB of memory in use
+ENERGY:     600        18.7787        67.8151        30.3793         5.0326             63.0327       -14.8496         0.0000         0.0000        70.0608            240.2495       272.2488       170.1887       239.9272       302.9006
+
+ENERGY:     700        20.9890        62.7541        28.3774         3.0112             64.7314       -18.5121         0.0000         0.0000        75.9290            237.2799       295.0519       161.3509       238.7464       295.0642
+
+ENERGY:     800        25.9086        66.8918        33.6388         4.6766             55.8242       -15.0783         0.0000         0.0000        64.4119            236.2736       250.2975       171.8618       236.9160       291.6233
+
+ENERGY:     900        15.8610        56.6950        29.1528         6.6286             62.2822       -18.4435         0.0000         0.0000        72.3725            224.5487       281.2318       152.1762       224.8576       279.3259
+
+TIMING: 1000  CPU: 0.187106, 0.000184625/step  Wall: 0.225253, 0.000213555/step, 0.000533888 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 1000  averaging 809.159 ns/day, 0.000213555 sec/step with standard deviation 0
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    1000        18.2010        57.2724        29.9546         6.1255             65.3555       -15.6425         0.0000         0.0000        65.4570            226.7235       254.3586       161.2666       227.6948       263.4426
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 1000
+The last position output (seq=1000) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    1100        21.4175        55.4083        26.6784         4.2088             64.4637       -14.1745         0.0000         0.0000        79.4501            237.4524       308.7344       158.0023       237.8744       283.1171
+
+ENERGY:    1200        19.2821        62.1230        29.3188         4.7273             60.6567       -12.4177         0.0000         0.0000        74.8718            238.5619       290.9438       163.6901       239.3333       289.7660
+
+ENERGY:    1300        14.5536        68.8825        29.4996         4.3116             65.1587       -18.2315         0.0000         0.0000        71.8760            236.0505       279.3023       164.1745       237.6606       288.7458
+
+ENERGY:    1400        17.2147        68.2876        28.9668         4.3141             66.1599       -17.0686         0.0000         0.0000        66.4087            234.2833       258.0570       167.8746       234.4563       282.3744
+
+ENERGY:    1500        18.3618        63.5606        26.2726         3.9521             50.8159        -5.7782         0.0000         0.0000        80.7272            237.9121       313.6971       157.1849       238.4254       283.9366
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 1500
+The last position output (seq=1500) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    1600        18.6428        60.8446        30.4053         2.6191             56.9366       -14.7345         0.0000         0.0000        76.3323            231.0463       296.6190       154.7140       231.6419       286.9058
+
+ENERGY:    1700        15.5387        59.3833        27.5313         6.4867             65.1792       -19.1681         0.0000         0.0000        66.4985            221.4495       258.4058       154.9511       222.0688       262.8976
+
+ENERGY:    1800        18.1682        56.1301        29.2830         5.9290             67.8613       -15.2652         0.0000         0.0000        69.0774            231.1837       268.4271       162.1064       231.8672       259.6233
+
+ENERGY:    1900        23.5343        63.3344        27.6888         5.0909             64.7309       -11.1893         0.0000         0.0000        74.5334            247.7235       289.6287       173.1901       248.2736       293.8885
+
+TIMING: 2000  CPU: 0.33933, 0.000152224/step  Wall: 0.403719, 0.000178466/step, 0.00039659 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 2000  averaging 881.586 ns/day, 0.00019601 sec/step with standard deviation 2.4812e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    2000        26.0048        63.0912        28.7173         6.8537             61.9775       -12.7501         0.0000         0.0000        78.4100            252.3043       304.6928       173.8943       253.7460       322.5740
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 2000
+The last position output (seq=2000) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    2100        29.2134        63.1732        29.6486         2.4178             62.9931       -13.9697         0.0000         0.0000        75.1271            248.6034       291.9357       173.4764       249.2739       303.3384
+
+LDB: ============= START OF LOAD BALANCING ============== 0.587308
+LDB: ============== END OF LOAD BALANCING =============== 0.587325
+LDB: =============== DONE WITH MIGRATION ================ 0.587338
+LDB: ============= START OF LOAD BALANCING ============== 0.596683
+LDB: ============== END OF LOAD BALANCING =============== 0.596709
+LDB: =============== DONE WITH MIGRATION ================ 0.596735
+ENERGY:    2200        18.0251        65.3735        28.9964         2.4705             65.4399       -16.5314         0.0000         0.0000        80.3556            244.1296       312.2532       163.7740       245.2298       302.4715
+
+ENERGY:    2300        28.1110        60.8879        34.5679         5.3418             61.3740       -13.6554         0.0000         0.0000        66.2290            242.8563       257.3588       176.6273       242.8306       289.3214
+
+ENERGY:    2400        19.0655        73.6538        28.9653         4.2300             56.8590       -15.4944         0.0000         0.0000        78.1550            245.4343       303.7018       167.2793       245.4898       298.0335
+
+ENERGY:    2500        15.7456        57.2069        31.6571         1.7418             64.5883       -16.1084         0.0000         0.0000        82.4211            237.2525       320.2795       154.8314       237.9311       289.6527
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 2500
+The last position output (seq=2500) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    2600        18.5180        55.5708        28.5797         2.4775             70.1866       -11.8988         0.0000         0.0000        69.3556            232.7894       269.5083       163.4338       234.4459       287.7136
+
+ENERGY:    2700        26.4962        67.7011        30.0721         3.4192             56.4973       -17.0009         0.0000         0.0000        70.9387            238.1237       275.6601       167.1850       239.3393       276.2959
+
+ENERGY:    2800        18.1151        52.7089        32.2473         5.3136             63.6260       -13.1402         0.0000         0.0000        74.8783            233.7490       290.9690       158.8707       233.9184       270.0469
+
+ENERGY:    2900        20.5454        63.9250        34.2451         5.2971             63.4131       -20.5038         0.0000         0.0000        81.6399            248.5617       317.2439       166.9218       249.7031       278.0015
+
+TIMING: 3000  CPU: 0.492059, 0.000152729/step  Wall: 0.585282, 0.000181564/step, 0.00035304 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 3000  averaging 903.79 ns/day, 0.000191195 sec/step with standard deviation 1.94265e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    3000        25.8330        68.9510        32.0100         4.8125             61.7732       -12.7861         0.0000         0.0000        78.9440            259.5377       306.7680       180.5936       261.0978       315.7461
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 3000
+The last position output (seq=3000) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    3100        17.3738        71.0164        37.0432         5.2350             59.8053       -17.5846         0.0000         0.0000        81.2410            254.1301       315.6935       172.8891       254.5134       307.7149
+
+ENERGY:    3200        27.0893        61.2781        30.7030         3.2684             53.5478        -3.1030         0.0000         0.0000        82.3017            255.0853       319.8155       172.7836       255.9377       310.0221
+
+ENERGY:    3300        20.9123        70.7221        32.8329         5.4967             68.9447       -14.5801         0.0000         0.0000        83.8416            268.1703       325.7994       184.3287       269.0632       316.4336
+
+ENERGY:    3400        21.4740        79.1019        37.8638         2.8488             58.9310       -17.4898         0.0000         0.0000        76.3331            259.0628       296.6221       182.7297       260.4782       334.1272
+
+ENERGY:    3500        26.0293        73.9591        36.0131         4.8236             51.2670       -11.5503         0.0000         0.0000        79.0331            259.5750       307.1140       180.5419       260.8497       315.1672
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 3500
+The last position output (seq=3500) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    3600        20.8982        71.6533        36.0268         3.7467             61.0035       -12.8020         0.0000         0.0000        74.0536            254.5799       287.7642       180.5263       255.3650       312.5802
+
+ENERGY:    3700        15.7223        73.7245        38.0860         3.4546             57.6421        -7.6924         0.0000         0.0000        74.9174            255.8546       291.1208       180.9372       257.2812       301.2238
+
+ENERGY:    3800        20.4552        74.8717        34.6007         2.2333             61.0353       -15.3611         0.0000         0.0000        77.4151            255.2501       300.8266       177.8350       256.3944       302.9745
+
+ENERGY:    3900        26.9825        70.3122        34.7606         6.1991             54.3644       -16.2327         0.0000         0.0000        79.7385            256.1245       309.8551       176.3860       257.9784       298.5763
+
+TIMING: 4000  CPU: 0.641979, 0.00014992/step  Wall: 0.764674, 0.000179392/step, 0.000298986 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 4000  averaging 917.958 ns/day, 0.000188244 sec/step with standard deviation 1.6924e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    4000        30.8398        53.5437        31.8173         4.6671             66.0251       -16.9887         0.0000         0.0000        80.5381            250.4423       312.9623       169.9042       251.6217       303.6946
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 4000
+The last position output (seq=4000) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    4100        22.6945        69.7914        40.4144         4.8357             60.3877       -18.2668         0.0000         0.0000        68.8623            248.7191       267.5912       179.8569       249.3125       298.2305
+
+LDB: ============= START OF LOAD BALANCING ============== 0.947891
+LDB: ============== END OF LOAD BALANCING =============== 0.947906
+LDB: =============== DONE WITH MIGRATION ================ 0.947919
+LDB: ============= START OF LOAD BALANCING ============== 0.956824
+LDB: ============== END OF LOAD BALANCING =============== 0.956832
+LDB: =============== DONE WITH MIGRATION ================ 0.956852
+ENERGY:    4200        24.0669        63.3181        34.4981         4.5451             63.5580       -12.2176         0.0000         0.0000        79.8195            257.5880       310.1698       177.7686       258.0752       297.1271
+
+ENERGY:    4300        17.9881        72.1105        35.3141         4.8681             67.6268       -11.8843         0.0000         0.0000        79.0315            265.0549       307.1079       186.0233       265.4752       311.0513
+
+ENERGY:    4400        21.3792        61.8432        36.8288         3.5525             65.9698        -9.2055         0.0000         0.0000        80.4168            260.7848       312.4908       180.3680       261.0522       322.6813
+
+ENERGY:    4500        26.7753        69.5409        34.0429         2.9704             57.9050       -11.7760         0.0000         0.0000        80.1648            259.6234       311.5118       179.4585       260.3695       297.4705
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 4500
+The last position output (seq=4500) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    4600        18.4981        70.1133        34.9190         4.8538             63.5448        -9.9910         0.0000         0.0000        77.6097            259.5477       301.5827       181.9381       259.6600       303.1777
+
+ENERGY:    4700        22.1742        63.3414        35.8289         6.5190             59.9974        -8.5576         0.0000         0.0000        73.9485            253.2518       287.3558       179.3032       253.9150       295.0134
+
+ENERGY:    4800        27.3223        82.4527        36.4658         3.6761             59.1690       -10.3457         0.0000         0.0000        66.3450            265.0852       257.8094       198.7402       265.7172       287.4001
+
+ENERGY:    4900        17.5240        69.8136        36.9563         4.6423             73.0358        -5.4605         0.0000         0.0000        74.3141            270.8255       288.7766       196.5114       271.9321       305.3028
+
+TIMING: 5000  CPU: 0.790234, 0.000148255/step  Wall: 0.942547, 0.000177873/step, 0.000247046 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 5000  averaging 928.185 ns/day, 0.00018617 sec/step with standard deviation 1.53729e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    5000        19.4026        72.9817        36.7615         3.9758             74.3420       -15.4738         0.0000         0.0000        77.0345            269.0242       299.3475       191.9897       269.3338       317.1911
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 5000
+The last position output (seq=5000) takes 0.000 seconds, 0.658 MB of memory in use
+ENERGY:    5100        20.1847        64.9532        36.1230         5.5653             68.0609        -9.0153         0.0000         0.0000        81.0312            266.9031       314.8784       185.8719       267.8530       298.2634
+
+ENERGY:    5200        18.9896        72.0305        34.6741         6.4720             71.1902        -9.8598         0.0000         0.0000        75.0967            268.5933       291.8176       193.4966       268.9115       290.7031
+
+ENERGY:    5300        22.0501        78.0813        38.1915         3.9614             65.3803       -13.8950         0.0000         0.0000        68.0107            261.7802       264.2822       193.7695       263.5320       281.3994
+
+ENERGY:    5400        14.4968        63.3043        40.4121         5.5983             75.2242        -8.4463         0.0000         0.0000        70.5363            261.1258       274.0964       190.5895       262.5489       278.1383
+
+ENERGY:    5500        14.3551        71.1858        38.0903         6.3051             75.1947       -11.8791         0.0000         0.0000        76.8380            270.0899       298.5842       193.2519       270.8587       280.6036
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 5500
+ENERGY:    5600        17.4805        55.8284        30.4959         1.7053             79.7275        -7.4560         0.0000         0.0000        81.5487            259.3303       316.8894       177.7816       259.7919       284.0526
+
+ENERGY:    5700        18.7151        69.0208        35.3912         3.6839             79.7174       -16.1256         0.0000         0.0000        66.8516            257.2544       259.7781       190.4028       257.9983       276.4812
+
+ENERGY:    5800        20.3742        65.7365        34.5063         3.8870             78.1017       -13.6545         0.0000         0.0000        74.3082            263.2595       288.7536       188.9512       264.2058       279.6498
+
+ENERGY:    5900        22.0828        54.8496        36.4708         2.8663             74.4863       -10.1764         0.0000         0.0000        81.2554            261.8348       315.7498       180.5793       263.2678       288.0139
+
+TIMING: 6000  CPU: 0.936613, 0.000146379/step  Wall: 1.11664, 0.000174091/step, 0.000193435 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 6000  averaging 938.331 ns/day, 0.000184157 sec/step with standard deviation 1.46074e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    6000        23.8193        61.2172        36.8925         2.9976             78.3401       -12.9526         0.0000         0.0000        75.3968            265.7108       292.9838       190.3140       266.0481       284.6537
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 6000
+ENERGY:    6100        14.4296        64.1137        36.3247         6.5614             81.6763       -10.8767         0.0000         0.0000        84.5897            276.8188       328.7063       192.2292       277.8171       305.4608
+
+LDB: ============= START OF LOAD BALANCING ============== 1.29922
+LDB: ============== END OF LOAD BALANCING =============== 1.29923
+LDB: =============== DONE WITH MIGRATION ================ 1.29925
+LDB: ============= START OF LOAD BALANCING ============== 1.30803
+LDB: ============== END OF LOAD BALANCING =============== 1.30804
+LDB: =============== DONE WITH MIGRATION ================ 1.30806
+ENERGY:    6200        25.0997        63.1509        38.9262         5.9360             72.6865        -6.1372         0.0000         0.0000        80.2002            279.8623       311.6492       199.6621       280.1709       309.0655
+
+ENERGY:    6300        15.4768        65.0985        32.4851         2.1678             72.9409        -8.3809         0.0000         0.0000        83.9559            263.7440       326.2434       179.7882       265.8743       301.4971
+
+ENERGY:    6400        13.2885        74.3901        35.1025         3.0618             69.8332       -10.2653         0.0000         0.0000        87.6425            273.0533       340.5691       185.4108       273.9232       295.5162
+
+ENERGY:    6500        24.6027        68.9913        33.7156         2.9841             72.2228       -12.0339         0.0000         0.0000        86.3890            276.8716       335.6983       190.4826       278.0735       315.4336
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 6500
+ENERGY:    6600        17.9953        65.9645        37.6956         4.2661             70.1640        -8.2309         0.0000         0.0000        99.4793            287.3338       386.5656       187.8546       289.6889       330.7775
+
+ENERGY:    6700        28.5471        69.4450        39.4267         3.4152             66.8077        -8.0827         0.0000         0.0000        88.8481            288.4072       345.2540       199.5591       288.7144       335.4555
+
+ENERGY:    6800        28.4772        77.4210        40.5870         4.5835             63.1112        -6.6566         0.0000         0.0000        84.5384            292.0618       328.5071       207.5234       293.6313       323.2813
+
+ENERGY:    6900        21.2421        74.4606        45.1222         3.7208             73.6872        -3.0362         0.0000         0.0000        89.0042            304.2008       345.8604       215.1967       305.6148       337.3336
+
+TIMING: 7000  CPU: 1.08164, 0.000145031/step  Wall: 1.28873, 0.000172089/step, 0.000143407 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 7000  averaging 947.198 ns/day, 0.000182433 sec/step with standard deviation 1.40932e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    7000        26.1055        71.6194        43.4116         2.3943             69.8977        -6.7481         0.0000         0.0000        92.6706            299.3510       360.1079       206.6804       299.8098       355.7618
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 7000
+ENERGY:    7100        30.4716        68.7950        45.1904         4.4279             68.6203        -8.0202         0.0000         0.0000        83.1322            292.6172       323.0425       209.4850       294.3159       351.5912
+
+ENERGY:    7200        18.1846        62.9956        46.3450         5.6947             72.5795        -7.5315         0.0000         0.0000        89.1818            287.4498       346.5508       198.2680       287.8709       339.2192
+
+ENERGY:    7300        29.3920        57.4870        45.0443         2.5704             74.3442        -4.0894         0.0000         0.0000        86.4273            291.1758       335.8471       204.7485       292.0838       316.8904
+
+ENERGY:    7400        17.7486        56.5892        45.2297         3.0613             77.6058         0.1610         0.0000         0.0000        91.5345            291.9302       355.6933       200.3956       293.1004       318.6403
+
+ENERGY:    7500        27.1348        70.5685        46.0490         6.4624             70.6400        -5.1339         0.0000         0.0000        83.6437            299.3644       325.0302       215.7208       301.0630       331.1090
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 7500
+ENERGY:    7600        17.6770        69.0890        46.8453         2.2670             81.6699        -4.8810         0.0000         0.0000        76.7432            289.4105       298.2158       212.6673       290.8903       333.2556
+
+ENERGY:    7700        20.1373        71.0414        42.6933         5.2150             76.3038        -7.5059         0.0000         0.0000        77.9517            285.8365       302.9117       207.8848       286.5379       310.3637
+
+ENERGY:    7800        19.4206        61.4052        40.5129         4.3945             78.5823        -5.5965         0.0000         0.0000        77.4550            276.1741       300.9818       198.7191       277.4789       311.0580
+
+ENERGY:    7900        25.1139        69.4449        41.7758         1.7408             75.7136        -7.3432         0.0000         0.0000        64.9052            271.3510       252.2145       206.4458       271.8179       289.5501
+
+TIMING: 8000  CPU: 1.22585, 0.000144204/step  Wall: 1.46018, 0.00017145/step, 9.52503e-05 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 8000  averaging 954.38 ns/day, 0.00018106 sec/step with standard deviation 1.36132e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    8000        18.4446        61.9068        40.1193         5.3075             85.6740        -8.7950         0.0000         0.0000        76.7616            279.4189       298.2873       202.6573       280.4574       290.8899
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 8000
+ENERGY:    8100        14.5127        67.8748        43.4983         3.6668             79.3451        -3.9094         0.0000         0.0000        88.0639            293.0522       342.2066       204.9883       294.2279       299.6405
+
+LDB: ============= START OF LOAD BALANCING ============== 1.64192
+LDB: ============== END OF LOAD BALANCING =============== 1.64194
+LDB: =============== DONE WITH MIGRATION ================ 1.64195
+LDB: ============= START OF LOAD BALANCING ============== 1.65045
+LDB: ============== END OF LOAD BALANCING =============== 1.65046
+LDB: =============== DONE WITH MIGRATION ================ 1.65048
+ENERGY:    8200        27.4910        61.5037        41.0784         2.3751             76.0477        -3.4913         0.0000         0.0000        86.4264            291.4310       335.8437       205.0046       292.5347       333.9538
+
+ENERGY:    8300        26.6519        66.6961        44.1152         6.0507             75.7058        -7.2258         0.0000         0.0000        92.4070            304.4009       359.0834       211.9939       305.5563       324.8364
+
+ENERGY:    8400        27.8442        67.0485        40.1366         6.9621             85.5407        -8.3900         0.0000         0.0000        86.5301            305.6721       336.2467       219.1420       305.7953       347.5218
+
+ENERGY:    8500        30.3224        58.4543        41.1440         7.6259             83.3356        -6.3260         0.0000         0.0000        75.0569            289.6131       291.6630       214.5561       290.1531       319.7785
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 8500
+ENERGY:    8600        13.4029        61.0166        41.3704         6.7242             85.5479        -4.9232         0.0000         0.0000        81.3593            284.4980       316.1533       203.1387       285.9654       304.9527
+
+ENERGY:    8700        16.2557        70.4092        43.0737         5.0352             85.7091        -5.9352         0.0000         0.0000        81.0345            295.5824       314.8914       214.5479       295.2407       323.0685
+
+ENERGY:    8800        24.3141        57.6953        43.2875         9.5325             78.7573        -5.2908         0.0000         0.0000        85.6953            293.9913       333.0027       208.2959       295.2317       323.2600
+
+ENERGY:    8900        22.3843        57.2053        40.5579         3.9759             90.3574        -3.6163         0.0000         0.0000        68.0857            278.9501       264.5735       210.8644       278.7388       311.8329
+
+TIMING: 9000  CPU: 1.37473, 0.000148883/step  Wall: 1.63838, 0.0001782/step, 4.94999e-05 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 9000  averaging 956.058 ns/day, 0.000180742 sec/step with standard deviation 1.27696e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:    9000        21.1711        43.4215        41.2598         4.5260             87.7423        -1.9028         0.0000         0.0000        85.5821            281.8001       332.5627       196.2180       282.7412       302.1469
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 9000
+ENERGY:    9100        17.0338        65.4779        43.3394         4.5315             82.9731        -6.2206         0.0000         0.0000        73.1555            280.2905       284.2744       207.1350       280.5553       298.6766
+
+ENERGY:    9200        21.9909        53.2185        43.4462         6.7717             81.5388        -3.4231         0.0000         0.0000        77.9194            281.4625       302.7863       203.5431       282.4574       290.0857
+
+ENERGY:    9300        24.2563        49.8799        44.6208         4.2063             83.9068        -4.4284         0.0000         0.0000        72.9257            275.3674       283.3812       202.4417       275.8712       291.3271
+
+ENERGY:    9400        16.0344        68.6506        42.7313         4.4549             78.6928        -6.4350         0.0000         0.0000        76.9267            281.0557       298.9288       204.1290       281.3418       282.8019
+
+ENERGY:    9500        23.2083        67.0046        40.4431         8.6628             80.1908        -5.9195         0.0000         0.0000        88.8205            302.4107       345.1469       213.5902       303.4382       325.9915
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 9500
+ENERGY:    9600        19.6238        60.2398        46.9951         4.5927             83.0153        -6.0242         0.0000         0.0000        80.1896            288.6321       311.6079       208.4425       289.9951       327.4461
+
+ENERGY:    9700        21.2183        57.0514        43.1162         5.9660             88.9036        -5.1405         0.0000         0.0000        80.7043            291.8193       313.6082       211.1150       292.9000       323.9986
+
+ENERGY:    9800        16.2947        54.9795        43.4542         4.1667             93.7497        -6.4776         0.0000         0.0000        73.5518            279.7188       285.8142       206.1670       280.9722       310.9585
+
+ENERGY:    9900        22.4699        59.2585        45.9469         4.5608             75.6651        -5.6434         0.0000         0.0000        80.0447            282.3024       311.0450       202.2577       283.9632       293.4265
+
+TIMING: 10000  CPU: 1.51013, 0.000135401/step  Wall: 1.80325, 0.00016487/step, 0 hours remaining, 0.658371 MB of memory in use.
+PERFORMANCE: 10000  averaging 964.528 ns/day, 0.000179155 sec/step with standard deviation 1.30437e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:   10000        21.3858        62.9897        44.2627         5.8968             81.0035        -7.4029         0.0000         0.0000        78.8156            286.9511       306.2686       208.1355       288.6533       305.1439
+
+WRITING COORDINATES TO DCD FILE da_smd.dcd AT STEP 10000
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 10000
+WRITING COORDINATES TO OUTPUT FILE AT STEP 10000
+CLOSING COORDINATE DCD FILE da_smd.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 10000
+The last velocity output (seq=-2) takes 0.002 seconds, 0.658 MB of memory in use
+====================================================
+
+WallClock: 1.970136  CPUTime: 1.544253  Memory: 0.658371 MB
+[Partition 0][Node 0] End of program
